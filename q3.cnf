@@ -1,0 +1,20 @@
+c for k=0, both are already equivalent, we are writing for k=1; r1 =5, x=6, s3 =7, s1 = 8
+p cnf 8 13
+1 2 0
+-1 -2 0
+-1 3 4 0
+1 -3 0
+1 -4 0
+-3 -5 0
+-3 6 0
+-3 7 0
+3 5 -6 -7 0
+-4 -5 0
+-4 -6 0
+-4 8 0
+4 5 6 -8 0
+
+c no need to define g as it becomes 0 for k =1
+c Since we get SAT, which means that Output of the two sequential circuit
+c is not equal. Thus the property violates at k=1. Therefore no need to examine further.
+
